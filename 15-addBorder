@@ -1,4 +1,4 @@
-// https://codefights.com/arcade/intro/level-4/ZCD7NQnED724bJtjN/solutions
+// https://codefights.com/arcade/intro/level-4/ZCD7NQnED724bJtjN
 
 function addBorder(picture) {
     var len=picture[0].length+2;
