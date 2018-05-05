@@ -1,0 +1,18 @@
+// https://codefights.com/arcade/intro/level-7/PTWhv2oWqd6p4AHB9
+
+/* FIX! */
+
+function stringsRearrangement(inputArray) {
+    var bool=true;
+    inputArray=inputArray.sort();
+    for(let i=0;i<inputArray.length-1;i++){
+        let diff=0;
+        for(let j=0;j<inputArray[i].length;j++){
+            let arr0=inputArray[i].split("");
+            let arr1=inputArray[i+1].split("");
+            if(arr0[j]!=arr1[j]){diff++;}
+        }
+        if(diff>1){bool=false;}
+    }
+    return bool;
+}
