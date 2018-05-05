@@ -1,8 +1,8 @@
 // https://codefights.com/arcade/intro/level-7/PTWhv2oWqd6p4AHB9
 
-/* FIX! */
+/* FIX! 8/9 Public Tests Correct */
 
-function stringsRearrangement(inputArray) {
+/*function stringsRearrangement(inputArray) {
     var bool=true;
     inputArray=inputArray.sort();
     for(let i=0;i<inputArray.length-1;i++){
@@ -15,4 +15,4 @@ function stringsRearrangement(inputArray) {
         if(diff>1){bool=false;}
     }
     return bool;
-}
+}*/
