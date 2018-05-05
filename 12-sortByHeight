@@ -1,4 +1,4 @@
-// https://codefights.com/arcade/intro/level-3/D6qmdBL2NYz49XHwM/solutions
+// https://codefights.com/arcade/intro/level-3/D6qmdBL2NYz49XHwM
 
 function sortByHeight(a) {
     var array=a.filter((element)=>{
