@@ -7,7 +7,7 @@ function reverseParentheses(s) {
     return s;
 }
 
-function reverseRecur(s){
+function reverseRecur(s) {
     var regex=/\(([^()]*)\)/i;
     var substr=regex.exec(s)[1];
     substr=substr.split("").reverse().join("");
