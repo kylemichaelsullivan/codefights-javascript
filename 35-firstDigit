@@ -1,0 +1,5 @@
+// https://codefights.com/arcade/intro/level-8/rRGGbTtwZe2mA8Wov
+
+function firstDigit(inputString) {
+    return inputString.replace(/\D+/g,"").substr(0,1);
+}
