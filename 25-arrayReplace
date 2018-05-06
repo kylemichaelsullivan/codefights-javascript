@@ -2,9 +2,7 @@
 
 function arrayReplace(inputArray, elemToReplace, substitutionElem) {
     inputArray.forEach((elem,i)=>{
-        if(elem==elemToReplace){
-            inputArray[i]=substitutionElem;
-        }
+        if(elem==elemToReplace)inputArray[i]=substitutionElem;
     });
     return inputArray;
 }
