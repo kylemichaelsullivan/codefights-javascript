@@ -5,17 +5,12 @@ function palindromeRearranging(inputString) {
     var obj={};
     
     for(let i=0;i<array.length;i++){
-        if(!obj.hasOwnProperty(array[i])){
-            obj[array[i]]=1;
-        }else{
-            obj[array[i]]++;
-        }
+        if(!obj.hasOwnProperty(array[i]))obj[array[i]]=1;
+        else obj[array[i]]++;
     }
     var odds=0;
     for(val in obj){
-        if(obj[val]%2!=0){
-            odds++;
-        }
+        if(obj[val]%2!=0)odds++;
     }
     return odds>1?false:true;
 }
