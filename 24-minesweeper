@@ -7,37 +7,37 @@ function minesweeper(matrix) {
         for(let y=0;y<matrix[x].length;y++){
             mines[x][y]=0;
             //above
-            if(matrix[x][y-1]){mines[x][y]++;}
+            if(matrix[x][y-1])mines[x][y]++;
 
             //below
             if(matrix[x][y+1]!=undefined){
-                if(matrix[x][y+1]){mines[x][y]++;}
+                if(matrix[x][y+1])mines[x][y]++;
             }
             
             //left
             if(matrix[x-1]!=undefined){
-                if(matrix[x-1][y]){mines[x][y]++;}
+                if(matrix[x-1][y])mines[x][y]++;
             }
             
             //right
             if(matrix[x+1]!=undefined){
-               if(matrix[x+1][y]){mines[x][y]++;}
+               if(matrix[x+1][y])mines[x][y]++;
             }
             
             if(matrix[x+1]!=undefined){
                 //down right
-                if(matrix[x+1][y+1]){mines[x][y]++;}
+                if(matrix[x+1][y+1])mines[x][y]++;
     
                 //down left
-                if(matrix[x+1][y-1]){mines[x][y]++;}
+                if(matrix[x+1][y-1])mines[x][y]++;
             }
             
             if(matrix[x-1]!=undefined){
                 //top right
-                if(matrix[x-1][y+1]){mines[x][y]++;}
+                if(matrix[x-1][y+1])mines[x][y]++;
             
                 //top left
-                if(matrix[x-1][y-1]){mines[x][y]++;}
+                if(matrix[x-1][y-1])mines[x][y]++;
             }
 
         }
