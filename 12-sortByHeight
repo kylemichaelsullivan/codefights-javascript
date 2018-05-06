@@ -2,7 +2,7 @@
 
 function sortByHeight(a) {
     var array=a.filter((element)=>{
-        if(element!=-1){return element;}
+        if(element!=-1)return element;
     }).sort((a,b)=>{
         return a-b;
     })
