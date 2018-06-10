@@ -1,0 +1,4 @@
+function longestDigitsPrefix(inputString) {
+    var result=inputString.match(/^\d+/);
+    return result==null?"":String(result);
+}
