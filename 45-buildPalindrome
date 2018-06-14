@@ -1,4 +1,4 @@
-// https://codefights.com/arcade/intro/level-10/ppZ9zSufpjyzAsSEx/solutions
+// https://codefights.com/arcade/intro/level-10/ppZ9zSufpjyzAsSEx
 
 function checkPalindrome(st) {
     for(let i=0;i<st.length/2;i++){
