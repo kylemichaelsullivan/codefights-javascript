@@ -1,4 +1,4 @@
-// https://codefights.com/arcade/intro/level-10/8RiRRM3yvbuAd3MNg/solutions
+// https://codefights.com/arcade/intro/level-10/8RiRRM3yvbuAd3MNg
 
 function electionsWinners(votes, k) {
     var m=Math.max(...votes);
