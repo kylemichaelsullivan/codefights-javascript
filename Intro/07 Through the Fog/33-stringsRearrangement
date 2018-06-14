@@ -1,18 +1,16 @@
 // https://codefights.com/arcade/intro/level-7/PTWhv2oWqd6p4AHB9
 
-/* FIX! 8/9 Public Tests Correct */
+X=(a,b,s,i)=>i==b.length ? s:X(a,b,s+(a[i]!=b[i]),i+1);
 
-/*function stringsRearrangement(inputArray) {
-    var bool=true;
-    inputArray=inputArray.sort();
-    for(let i=0;i<inputArray.length-1;i++){
-        let diff=0;
-        for(let j=0;j<inputArray[i].length;j++){
-            let arr0=inputArray[i].split("");
-            let arr1=inputArray[i+1].split("");
-            if(arr0[j]!=arr1[j]){diff++;}
-        }
-        if(diff>1){bool=false;}
-    }
-    return bool;
-}*/
+stringsRearrangement=A=>{
+    // Build matrix to contain deltas
+    M=A.map(a=>(N=[],A.map((b,c)=>X(a,b,0,C=0)==1&&N.push(c)),N));
+    e=-1;
+
+    // DFS from endpoint (if there is one) must eventually reach all nodes from this point
+    w=(n,L)=>L==A.length||M[n].some(c=>!M[c].L&&w(c,L+1),M[n].L=L)||(M[n].L=0);
+    
+    // Check for fully connected graph every node has neighbors and no more than two leaf nodes
+    return M.every((v,i)=>(b=(l=v.length)==1,b&&(e=i),C+=b,l))&&C<=2&&
+    (e<0||w(e,1));
+}
