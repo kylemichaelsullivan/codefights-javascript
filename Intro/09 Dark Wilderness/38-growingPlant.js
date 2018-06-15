@@ -4,7 +4,7 @@ function growingPlant(upSpeed, downSpeed, desiredHeight) {
     var height=0,day=1;
     while(height<desiredHeight){
         height+=upSpeed;
-        if(height>=desiredHeight){break};
+        if(height>=desiredHeight)break;
         height-=downSpeed;
         day++;
     }
