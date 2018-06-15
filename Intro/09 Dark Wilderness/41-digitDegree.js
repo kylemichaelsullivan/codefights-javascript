@@ -10,7 +10,7 @@ function digitDegree(n) {
             n=n.toString().split("").reduce((a,b)=>{
                 return parseInt(a)+parseInt(b);
             });
-            if(n<10){break;}
+            if(n<10)break;
         }
     }
     return count;
