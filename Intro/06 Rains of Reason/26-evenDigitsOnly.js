@@ -2,9 +2,8 @@
 
 function evenDigitsOnly(n) {
     n=n.toString().split("");
-    var bool=true;
     for(let i=0;i<n.length;i++){
-        if(n[i]%2!=0)bool=false;
+        if(n[i]%2!=0)return false;
     }
-    return bool;
+    return true;
 }
