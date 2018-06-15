@@ -5,9 +5,7 @@ function validTime(time) {
     var h=time[0],m=time[1];
     
     if(h>=0&&h<24){
-        if(m>=0&&m<60){
-            return true;
-        }
+        if(m>=0&&m<60)return true;
     }
     return false;
 }
