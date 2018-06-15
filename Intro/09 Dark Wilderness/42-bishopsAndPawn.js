@@ -8,5 +8,4 @@ function bishopAndPawn(bishop, pawn) {
     let pawnY=parseInt(pawn[1]);
     
     return bishopX+bishopY===pawnX+pawnY||bishopX+pawnY===pawnX+bishopY;
-    return false;
 }
