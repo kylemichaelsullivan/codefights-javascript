@@ -1,15 +1,14 @@
-// https://codefights.com/arcade/intro/level-3/3o6QFqgYSontKsyk4
+// https://app.codesignal.com/arcade/intro/level-3/3o6QFqgYSontKsyk4
 
-function reverseParentheses(s) {
-    if(s.includes("(")){
-        return reverseParentheses(reverseRecur(s));
-    }
-    return s;
+function reverseInParentheses(s) {
+  if(s.includes('(')){
+    return reverseInParentheses(reverseRecur(s));
+  }
+  return s;
 }
 
 function reverseRecur(s){
-    var regex=/\(([^()]*)\)/i;
-    var substr=regex.exec(s)[1];
-    substr=substr.split("").reverse().join("");
-    return s.replace(regex,substr);
+  const regex = /\(([^()]*)\)/i;
+  const substr = regex.exec(s)[1].split('').reverse().join('');
+  return s.replace(regex,substr);
 }
