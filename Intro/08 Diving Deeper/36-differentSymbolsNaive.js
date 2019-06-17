@@ -1,13 +1,12 @@
-// https://codefights.com/arcade/intro/level-8/8N7p3MqzGQg5vFJfZ
+// https://app.codesignal.com/arcade/intro/level-8/8N7p3MqzGQg5vFJfZ
 
 function differentSymbolsNaive(s) {
-    var arr=[];
-    s=s.split("");
-    s.forEach((elem)=>{
-        if(arr.includes(elem)==false){
-            arr.push(elem);
-        }
-    })
-    
-    return arr.length;
+  s = s.split('');
+  const arr=[];
+
+  s.forEach((elem)=>{
+    if(arr.includes(elem)==false) arr.push(elem);
+  });
+
+  return arr.length;
 }
