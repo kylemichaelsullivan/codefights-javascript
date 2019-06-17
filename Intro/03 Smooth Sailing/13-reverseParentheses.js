@@ -1,9 +1,7 @@
 // https://app.codesignal.com/arcade/intro/level-3/3o6QFqgYSontKsyk4
 
 function reverseInParentheses(s) {
-  if(s.includes('(')){
-    return reverseInParentheses(reverseRecur(s));
-  }
+  if(s.includes('(')) return reverseInParentheses(reverseRecur(s));
   return s;
 }
 

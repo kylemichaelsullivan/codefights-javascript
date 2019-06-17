@@ -6,6 +6,7 @@ function alternatingSums(a) {
   a.forEach((element,index)=>{
     if(index % 2 == 0) odd += element;
     else even += element;
-  })
+  });
+
   return [odd,even];
 }

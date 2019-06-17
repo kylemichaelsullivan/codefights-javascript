@@ -5,11 +5,11 @@ function isLucky(n) {
   const half = n.length / 2;
 
   const firstHalf = n.substring(0, half).split('').reduce((a,b)=>{
-    return parseInt(a)+parseInt(b);
+    return parseInt(a) + parseInt(b);
   });
 
   const secondHalf = n.substring(half,).split('').reduce((a,b)=>{
-    return parseInt(a)+parseInt(b);
+    return parseInt(a) + parseInt(b);
   });
 
   return firstHalf == secondHalf;
