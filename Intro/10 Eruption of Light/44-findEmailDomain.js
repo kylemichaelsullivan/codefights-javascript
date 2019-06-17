@@ -1,5 +1,5 @@
-// https://codefights.com/arcade/intro/level-10/TXFLopNcCNbJLQivP
+// https://app.codesignal.com/arcade/intro/level-10/TXFLopNcCNbJLQivP
 
 function findEmailDomain(address) {
-    return address.substr(address.lastIndexOf("@")+1);
+  return address.substr(address.lastIndexOf('@')+1);
 }
