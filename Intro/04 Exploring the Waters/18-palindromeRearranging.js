@@ -5,7 +5,7 @@ function palindromeRearranging(inputString) {
   const obj = {};
 
   for(let i = 0; i < array.length; i++){
-    if(!obj.hasOwnProperty(array[i])) obj[array[i]]=1;
+    if(!obj.hasOwnProperty(array[i])) obj[array[i]] = 1;
     else obj[array[i]]++;
   }
 
