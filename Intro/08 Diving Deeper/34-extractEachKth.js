@@ -4,9 +4,7 @@ function extractEachKth(inputArray, k) {
   const output=[];
 
   for(let i = 0; i < inputArray.length; i++){
-    if(i % k != k - 1){
-      output.push(inputArray[i]);
-    }
+    if(i % k != k - 1) output.push(inputArray[i]);
   }
 
   return output;

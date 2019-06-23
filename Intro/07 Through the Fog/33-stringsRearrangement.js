@@ -1,6 +1,6 @@
 // https://app.codesignal.com/arcade/intro/level-7/PTWhv2oWqd6p4AHB9
 
-function findNext(current, a) {
+const findNext = (current, a) => {
   if(a.length == 0) return a;
 
   for(let i = 0; i < a.length; i++){
@@ -13,7 +13,7 @@ function findNext(current, a) {
   return a;
 }
 
-function differsByOneChar(s1, s2) {
+const differsByOneChar = (s1, s2) => {
   let mismatches = 0;
 
   for(let i = 0; i < s1.length; i++){

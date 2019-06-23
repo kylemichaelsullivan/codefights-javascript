@@ -5,7 +5,7 @@ function differentSymbolsNaive(s) {
   const arr=[];
 
   s.forEach((elem)=>{
-    if(arr.includes(elem)==false) arr.push(elem);
+    if(!arr.includes(elem)) arr.push(elem);
   });
 
   return arr.length;

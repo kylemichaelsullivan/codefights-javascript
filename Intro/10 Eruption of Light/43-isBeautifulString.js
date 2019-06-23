@@ -4,7 +4,7 @@ function isBeautifulString(inputString) {
   const array = new Array(26).fill(0);
   //ASCII: a=97,z=122
 
-  for(let i = 0; i<inputString.length; i++){
+  for(let i = 0; i < inputString.length; i++){
     array[inputString[i].charCodeAt()-97]++;
   }
 

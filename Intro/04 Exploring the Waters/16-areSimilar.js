@@ -3,8 +3,7 @@
 function areSimilar(a, b) {
   if(a.toString() == b.toString()) return true;
 
-  let arr0 = [];
-  let arr1 = [];
+  let arr0 = [], arr1 = [];
 
   for(let i = 0; i<a.length; i++){
     if(a[i] != b[i]){

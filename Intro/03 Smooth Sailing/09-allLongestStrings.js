@@ -5,7 +5,7 @@ function allLongestStrings(inputArray) {
 
   for(let i = 1; i < inputArray.length; i++){
     if(longest < inputArray[i].length){
-     longest = inputArray[i].length;
+      longest = inputArray[i].length;
     }
   }
 

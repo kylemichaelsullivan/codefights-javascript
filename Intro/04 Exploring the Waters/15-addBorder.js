@@ -1,8 +1,7 @@
 // https://app.codesignal.com/arcade/intro/level-4/ZCD7NQnED724bJtjN
 
 function addBorder(picture) {
-  let len = picture[0].length+2;
-  let wall = '';
+  let len = picture[0].length + 2, wall = '';
 
   for(let i = 0; i < len; i++){
     wall = wall.concat('*');
