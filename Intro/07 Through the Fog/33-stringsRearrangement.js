@@ -1,15 +1,35 @@
 // https://app.codesignal.com/arcade/intro/level-7/PTWhv2oWqd6p4AHB9
 
-X=(a,b,s,i)=>i==b.length ? s:X(a,b,s+(a[i]!=b[i]),i+1);
+function findNext(current, a) {
+  if(a.length == 0) return a;
 
-stringsRearrangement=A=>{
-  // Build matrix to contain deltas
-  M=A.map(a=>(N=[],A.map((b,c)=>X(a,b,0,C=0)==1&&N.push(c)),N));
-  e=-1;
+  for(let i = 0; i < a.length; i++){
+    if(differsByOneChar(current, a[i])){
+      let remaining = findNext(a[i], a.slice(0, i).concat(a.slice(i+1)));
+      if(remaining.length === 0) return remaining;
+    }
+  }
 
-  // DFS from endpoint (if there is one) must eventually reach all nodes from this point
-  w=(n,L)=>L==A.length||M[n].some(c=>!M[c].L&&w(c,L+1),M[n].L=L)||(M[n].L=0);
+  return a;
+}
 
-  // Check for fully connected graph every node has neighbors and no more than two leaf nodes
-  return M.every((v,i)=>(b=(l=v.length)==1,b&&(e=i),C+=b,l))&&C<=2&&(e<0||w(e,1));
+function differsByOneChar(s1, s2) {
+  let mismatches = 0;
+
+  for(let i = 0; i < s1.length; i++){
+    if(s1[i] != s2[i]) mismatches++;
+    if(mismatches > 1) break;
+  }
+
+  return mismatches == 1;
+}
+
+function stringsRearrangement(a) {
+  for(let i = 0; i < a.length; i++){
+    let remaining = findNext(a[i], a);
+
+    if(remaining.length == 0) return true;
+  }
+
+  return false;
 }
